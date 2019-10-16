@@ -120,7 +120,16 @@ Cohort ThirtyFour = new Cohort();
             Console.WriteLine(JavaEx.name);
         }
 
+        Console.WriteLine("----------------");
 
+        List<Student> STCohort = students.Where(sc => sc.Cohort == 34 ).ToList();
+
+
+       foreach(Student studentincohort in STCohort)
+        {
+            Console.WriteLine(studentincohort.firstName);
+        }
+        Console.WriteLine("----------------");
 
         }
 
